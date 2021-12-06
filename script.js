@@ -24,6 +24,7 @@ for (let i = 0; i < 10; i++) {  //ez egy rosszul strukturált kód varral
 console.log("Cikluson kívül: " + tomb);
 */
 
+/*
 class Car {
     constructor(model, type, maxSpeed) {
         this.model = model;
@@ -63,3 +64,38 @@ function getTimeNeeded(distance, car) {
 }
 
 console.log(getTimeNeeded(100, car1));
+*/
+
+const numbers = [1, 4, 16];
+const strings = ["Máté", "Péter", "Timi", "Dorcsi", "Bálint"];
+
+function getBiggerThan5(numberList) {
+    const result = [];
+    for (let i = 0; i < numberList.length; i++) {
+        if (numberList[i] > 5) {
+            result.push(numberList[i]);
+        }
+    }
+    return result;
+}
+function getSmallerThan10(numberList) {
+    const result = [];
+    for (let i = 0; i < numberList.length; i++) {
+        if (numberList[i] < 10) {
+            result.push(numberList[i]);
+        }
+    }
+    return result;
+}
+function startingWithB(inputList) {
+    const result = [];
+    for (let i = 0; i < inputList.length; i++) {
+        if (inputList[i][0] === "B") {
+            result.push(inputList[i]);
+        }
+    }
+    return result;
+}
+
+const resultString = startingWithB(strings);
+console.log(resultString);
